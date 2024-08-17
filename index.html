@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>نادي أدِيب</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+                <div class="top-div">
+                   <img src="logo.png" alt="">
+                </div>
+                <!-- <ul class="progress-bar">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul> -->
+
+
+            <form method="post" action="https://script.google.com/macros/s/AKfycbxPX3sVvryjA58kGchDXV9Bga_FxBzFVo4-6faWLzSeNHzKzMNZdbPTwXKe2RK7jyKO/exec" name="MyGroup">
+
+            <div class="main active">
+
+              <div class="oneMain">
+              <button id="myBtn" class="startButton">المتابعة بأسم</button>
+              <button type="submit" value="Submit" class="create-workspace-none">المتابعة بدون أسم </button>
+            </div>
+
+            <div id="myModal" class="withName">
+              <div class="withName-contact">
+              <div class="input-text">
+                <input id="input" type="text" placeholder="أسمك يـ أدِيب/ـه "  name="الأسم الثلاثي" require>
+                <span> ✍🏻الأسم الثلاثي </span>
+            </div>
+            <div class="button">
+              <button type="submit" value="Submit" class="create-workspace"> استمرار </button>
+          </div>
+</div>
+            </div>
+            
+            </div> 
+
+
+      <div class="main">
+
+        <div class="content">
+           <h4> 🎙️المايك لك </h4>
+        </div>
+
+        <div class="input-text">
+          <textarea id="input" placeholder=" اكتب كل اللي بخاطرك ،، انتقاد - مدح - شكوى .. اللي ودك "  name="مساحة الأعضاء" require></textarea>
+      </div>
+
+        <div class="button button_gap1">
+            <button class="back-click">الرجوع للخلف</button>
+            <button class="finish-click" name="submit">ارسال</button>
+        </div>
+
+       </div> 
+
+
+
+            <div class="main">
+
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+                <div class="content">
+                   <h2 style="color: #ffc60a;">  💛شكرًا لك يا سفير أديب </h2>
+                   <p> 
+                    الإبداع يأتي من الثقة، ونحن نثق بطاقات مُبدعينا وأُدبائنا في أدِيب
+                  </p>
+                </div>
+
+                <div class="finish">
+              <button class="twitter">     <a href="https://twitter.com/AB_KFU" target="_blank"> الذهاب إلى تويتر  </a></button>
+                <button class="group">  <a href="https://web.telegram.org/a/#-1001825412173" target="_blank">الرجوع الى القروب</a></button>
+                  <!-- <a href="https://twitter.com/AB_KFU" target="_blank" class="twitter">الذهاب إلى تويتر</a>
+                  <a href="https://web.telegram.org/a/#-1001825412173" target="_blank" class="group">الرجوع الى القروب</a> -->
+
+              </div>
+
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+    </form>
+      <script src="script.js"></script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxPX3sVvryjA58kGchDXV9Bga_FxBzFVo4-6faWLzSeNHzKzMNZdbPTwXKe2RK7jyKO/exec'
+        const form = document.forms['MyGroup']
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          // .then(response => alert("Thank you! your form is submitted successfully." ))
+          // .then(() => {  window.location.reload(); })
+          // .catch(error => console.error('Error!', error.message))
+        })
+        </script>
+
+        <script>
+          function isChecked() {
+            if(document.getElementById("mobile").checked){
+              document.getElementById("result").style.display = 'block'
+            }
+            else{
+              document.getElementById("result").style.display = 'none'
+            }
+          }
+        </script>
+
+      </body>
+</html>
