@@ -1,26 +1,26 @@
 @font-face {
   font-family: bb;
-  src: url(/COMM\ -\ Lyon\ Arabic\ Display\ Black.otf);
+  src: url(COMM\ -\ Lyon\ Arabic\ Display\ Black.otf);
 }
 
 @font-face {
   font-family: b;
-  src: url(/COMM\ -\ Lyon\ Arabic\ Display\ Bold.otf);
+  src: url(COMM\ -\ Lyon\ Arabic\ Display\ Bold.otf);
 }
 
 @font-face {
   font-family: l;
-  src: url(/COMM\ -\ Lyon\ Arabic\ Display\ Light.otf);
+  src: url(COMM\ -\ Lyon\ Arabic\ Display\ Light.otf);
 }
 
 @font-face {
   font-family: m;
-  src: url(/COMM\ -\ Lyon\ Arabic\ Display\ Medium.otf);
+  src: url(COMM\ -\ Lyon\ Arabic\ Display\ Medium.otf);
 }
 
 @font-face {
   font-family: r;
-  src: url(/COMM\ -\ Lyon\ Arabic\ Display\ Regular.otf);
+  src: url(COMM\ -\ Lyon\ Arabic\ Display\ Regular.otf);
 }
 
 *{
